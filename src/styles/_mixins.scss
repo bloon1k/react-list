@@ -1,0 +1,9 @@
+@use './colors';
+
+@mixin button {
+    background: 0;
+    padding: .5em;
+    border: 2px solid colors.$very-light-grayish-blue;
+    border-radius: 1em;
+    font-size: 1em;
+}

@@ -1,0 +1,53 @@
+@use '../../../styles/colors';
+
+.pagination {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: .2em;
+
+    &__item {
+        font-size: 1em;
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        cursor: pointer;
+        color: colors.$very-dark-grayish-blue;
+        background: 0;
+        border: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__controls {
+        display: flex;
+        gap: 1em;
+
+        & button {
+            width: 50%;
+        }
+    }
+
+    &__pages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.previous, .next {
+    border: 2px solid colors.$very-dark-grayish-blue;
+    transition: .2s all;
+
+    &:hover {
+        background: colors.$very-dark-grayish-blue;
+        color: colors.$very-light-grayish-blue;
+    }
+}
+
+.selected {
+    border: 2px solid colors.$very-dark-grayish-blue;
+    color: colors.$very-dark-grayish-blue;
+}

@@ -1,0 +1,2 @@
+export const SET_CRYPTOS_LIST = 'SET_CRYPTOS_LIST'
+export const GET_CRYPTOS_LIST = 'GET_CRYPTOS_LIST'
